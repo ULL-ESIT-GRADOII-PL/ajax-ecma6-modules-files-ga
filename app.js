@@ -13,10 +13,10 @@ app.use(expressLayouts);
 
 app.use(express.static(__dirname + '/public'));
 
-const calculate = require('models/calculate');
+const calculate = require('./models/calculate');
 
 app.get('/', (request, response) => {
-  response.sender('index', {title : 'CSV'});
+  response.render('index', {title : 'CSV'});
 });
 
 app.get('/csv', (request, response) => {
