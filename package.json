@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    "url": "https://github.com/ULL-ESIT-GRADOII-PL/ajax-ecma6-modules-files-ga"
   },
   "keywords": [
     "csv"
   ],
-  "author": XXXXXXXXXX
-  "contributors": [],
+  "author": "ga",
+  "contributors": ["Gabriel Melián", "Alejandro Marrero"],
   "license": "ISC",
   "bugs": {
-    "url": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   },
-  "homepage": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  "homepage": "https://csv-ajax-ga.herokuapp.com",
   "dependencies": {
 	"jquery": "*",
     "underscore": "*",
@@ -29,8 +29,8 @@
     "express-ejs-layouts": "~1.1.0"
   },
   "engines": {
-    "node": XXXXX
-  },
+    "node": "0.12.7"
+	  },
   "devDependencies": {
   }
 }
