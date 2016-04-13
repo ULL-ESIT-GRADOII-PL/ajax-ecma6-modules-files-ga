@@ -1,4 +1,23 @@
 # Práctica 2: Comma separated values (CSV) with AJAX
+[![Build Status](https://travis-ci.org/marreA/ajax-ecma6-modules-files-ga.svg?branch=master)](https://travis-ci.org/marreA/ajax-ecma6-modules-files-ga)
+* La sección *Práctica: Comma Separated Values. CSV* de los [apuntes](http://crguezl.github.io/pl-html/node11.html)
+* La [descripción de la práctica](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
+* See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.
+
+**Repositorios GitHub**
+* [Repositorio de la Organización](https://github.com/ULL-ESIT-GRADOII-PL/ajax-ecma6-modules-files-ga.git)
+* [Repositorio de trabajo](https://github.com/marreA/ajax-ecma6-modules-files-ga.git)
+
+
+**Página de despliegue de la aplicación:**
+* [Web](https://csv-ajax-ga.herokuapp.com/)
+* [Pruebas](http://marrea.github.io/localstorage-jquery-underscore-express-sass-heroku-ga/)
+
+**Página de los autores**
+
+* [Gabriel Melián](https://alu0100819786.github.io)
+* [Alejandro Marrero](https://marreA.github.io/)
+
 
 ## jQuery.get( url [, data ] [, success ] [, dataType ] )
 * url
@@ -9,7 +28,7 @@
   * A plain object or string that is sent to the server with the request.
 * success
   * Type: Function( PlainObject data, String textStatus, jqXHR jqXHR )
-  * A callback function that is executed if the request succeeds. 
+  * A callback function that is executed if the request succeeds.
     Required if `dataType` is provided, but you can use `null` or `jQuery.noop` as a placeholder.
 * dataType
   * Type: String
@@ -18,8 +37,8 @@
 ## jQuery.get( [settings ] )
 * settings
   * Type: PlainObject
-  * A set of key/value pairs that configure the Ajax request. 
-  * All properties except for `url` are optional. 
+  * A set of key/value pairs that configure the Ajax request.
+  * All properties except for `url` are optional.
   * A default can be set for any option with `$.ajaxSetup()`.
 
 This is a shorthand Ajax function, which is equivalent to:
@@ -35,6 +54,5 @@ $.ajax({
 
 The success callback function is passed the returned data, which will be an XML root element, text string, JavaScript file, or JSON object, depending on the MIME type of the response. It is also passed the text status of the response.
 
-# Heroku 
+# Despliegue de referencia en Heroku
 https://cvsajax.herokuapp.com/
-
