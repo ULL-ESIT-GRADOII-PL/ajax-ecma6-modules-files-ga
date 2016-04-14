@@ -25,23 +25,22 @@ const fillTable = (data) => {
 /* Volcar en la textarea de entrada 
  * #original el contenido del fichero fileName */
 const dump = (fileName) => {
-  XXXXXXXXXXXXXXX XXXXXXXX XXXXXX X
-      XXXXXXXXXXXXXXXXXXXXXXXXX
-  XXX
+      
+  $.get(fileName, function (data) {
+        
+      $("#original").val(data);
+  });
 };
  
 const handleFileSelect = (evt) => {
   evt.stopPropagation();
   evt.preventDefault();
 
- XXX XXXXX X XXXXXXXXXXXXXXXXX 
-
-  XXX XXXXXX X XXX XXXXXXXXXXXXX
-  XXXXXXXXXXXXX X XXX XX X
-  
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  XX
-  XXXXXXXXXXXXXXXXXXXXXXXXXXX
+ $.get(fileName, function (data) {
+       
+      $("#original").val(data);
+      
+  });
 }
 
 /* Drag and drop: el fichero arrastrado se vuelca en la textarea de entrada */
@@ -49,15 +48,15 @@ const handleDragFileSelect = (evt) => {
   evt.stopPropagation();
   evt.preventDefault();
 
-  XXX XXXXX X XXXXXXXXXXXXXXXXXXXXXXX XX XXXXXXXX XXXXXXX
+  var files = evt.dataTransfer.files;
 
-  XXX XXXXXX X XXX XXXXXXXXXXXXX
-  XXXXXXXXXXXXX X XXX XX X
+  var read = new FileReader();
+  read.onload = (e) => {
   
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    XXXXXXXXXXXXXXXXXXXXXXXXXXX X XXXXXXXX
-  XX
-  XXXXXXXXXXXXXXXXXXXXXXXXXXX
+    $("#original").val(e.target.result);
+    evt.target.style.background = "white";
+  };
+  read.readAsText(files[0])
 }
 
 const handleDragOver = (evt) => {
@@ -67,24 +66,30 @@ const handleDragOver = (evt) => {
 }
 
 $(document).ready(() => {
+      
     let original = document.getElementById("original");  
     if (window.localStorage && localStorage.original) {
       original.value = localStorage.original;
     }
-
-    /* Request AJAX para que se calcule la tabla */
-    XXXXXXXXXXXXXXXXXX XX XX X
-        XX XXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXX X XXXXXXXXXXXXXXX
-        XXXXXXXXXXXXX 
-          X XXXXXX XXXXXXXXXXXXXX XX 
-          XXXXXXXXXX
-          XXXXXX
-        XX
-   XXX
+    
+   $("#parse").click( () => {
+         
+        if (window.localStorage) localStorage.original = original.value;
+        
+        $.get("/csv", /* Llamada a AJAX para que calcule la tabla */
+        
+          { input: original.value }, 
+          fillTable,
+          'json'
+        );
+   });
+   
    /* botones para rellenar el textarea */
-   XXXXXXXXXXXXXXXXXXXXXXXXX XXXXX XX X
-     XXXXXXXXXXX XX XX X XXXXXXXXXXXXXXXXXXXXXXXXXXX XXX
-   XXX
+   $('button.example').each( (_,y) => {
+         
+     $(y).click( () => { dump(`${$(y).text()}.txt`); });
+   });
+
 
     // Setup the drag and drop listeners.
     //var dropZone = document.getElementsByClassName('drop_zone')[0];
