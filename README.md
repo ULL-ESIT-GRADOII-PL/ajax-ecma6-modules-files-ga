@@ -18,6 +18,10 @@
 * [Gabriel Melián](https://alu0100819786.github.io)
 * [Alejandro Marrero](https://marreA.github.io/)
 
+## RegExp
+Autómata que representa la expresión regular utilizada para analizar la entrada en formato CSV.
+![](img/dfa.png)
+
 
 ## jQuery.get( url [, data ] [, success ] [, dataType ] )
 * url
