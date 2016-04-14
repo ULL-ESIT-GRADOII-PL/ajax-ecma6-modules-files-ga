@@ -28,17 +28,19 @@ module.exports = function(config) {
     
     reporters: ['progress'],
 
-  port: 9876,
+      port: 9876,
 
-  colors: true,
+      colors: true,
 
-  logLevel: config.LOG_INFO,
+      logLevel: config.LOG_INFO,
 
-  autoWatch: true,
-
+     autoWatch: true,
+  
      browsers: ['Firefox', 'PhantomJS'],
 
-  singleRun: false
+      captureTimeout: 60000,
+ 
+     singleRun: false
 
     });
 };
