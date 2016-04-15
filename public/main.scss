@@ -1,4 +1,6 @@
+@import 'reset';
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 body {
   font: 100% Helvetica, sans-serif;
   background-color: #6ADDFF;
@@ -27,65 +29,47 @@ body {
 
 h1            {
 	text-align: center;
-	font-size: x-large;
+	font-size: 50px;
 	margin-top: inherit;
 	font-family: 'Pacifico';
 	color: #00627F;
-	padding: 25px;
+	padding: 50px;
+	margin-top: 50px;
  }
 
-.container {
-	margin: auto;
-	padding: 25px;
-	text-align:  center;
-	display: table;
+.titulo_practica {
+	img {
+		width: 50px;
+		height: 50px;
+		float: right;
+	}
 }
 
-.footer_links {
-		background-color:  #00627F;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 100px;
-		width: 100%;
-		float: left;
-		margin-top: 5px;
-		display: block;
-
-		ul {
-			float: left;
-			list-style: none;
-		}
-		li {
-			float: left;
-			padding-left: 30px;
-			margin-bottom: 30px;
-		}
-		img {
-			width: 50px;
-			height: 50px;
-		}
+.contenido {
+	position: relative;
+	left: 35%;
+	text-align: center;
 }
-
-i {
-	font-weight: 200;
-	font-style: normal;
-}
-
 table {
 	.center {
-		font-weight: bold;
+		font-weight: bold;;
 		color: black;
 		text-align: center;
-
 		margin-left: 90px;
 		margin-top: 10px;
-
 		border: ridge;
 		border-color: blue;
-
 		background-color: white;
-	}
+		}
+		tr{
+			text-align: center;
+		}
+		th {
+			text-align: center;
+			font-family: 'Pacifico';
+			font-size: 18px;
+			color: #00627F;
+		}
 }
 
 .output {
