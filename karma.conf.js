@@ -7,9 +7,8 @@ module.exports = function(config) {
     
     files: [
       'public/csv.js',
-      'test/test.js',
-      'test/mocha.js',
-      'test/mocha.css',
+      'test/*.js',
+      'test/*.css',
     ],
     
     client: {
