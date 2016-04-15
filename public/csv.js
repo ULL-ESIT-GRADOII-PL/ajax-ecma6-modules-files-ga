@@ -1,7 +1,6 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
 (() => {
-"use strict"; // Use ECMAScript 5 strict mode in browsers that support it
-
+"use strict"; 
 const resultTemplate = `
 <div class="contenido">
       <table class="center" id="result">

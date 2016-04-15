@@ -5,9 +5,6 @@
   "main": "csv.js",
   "scripts": {
     "test": "node_modules/karma/bin/karma start --single-run",
-    "testf": "xdg-open test.html",
-    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js",
-    "karma": "node_modules/karma/bin/karma start",
     "start": "node app.js"
   },
   "repository": {
@@ -32,11 +29,8 @@
     "body-parser": "~1.12.0",
     "express-ejs-layouts": "~1.1.0"
   },
-  "engines": {
-    "node": "0.12.7"
-	  },
   "devDependencies": {
-		"chai": "~2.0.0",
+	 "chai": "~2.0.0",
 	 "gulp-karma": "0.0.5",
 	 "gulp-util": "^3.0.7",
 	 "gulp-uglify": "*",
@@ -53,6 +47,8 @@
 	 "mocha": "*",
 	 "optimist": "*",
 	 "phantomjs-prebuilt": "^2.1.5"
-
-  }
+  },
+  "engines": {
+    "node": "5.10.1"
+	  }
 }

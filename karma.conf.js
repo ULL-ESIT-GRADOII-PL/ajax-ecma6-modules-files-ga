@@ -36,7 +36,7 @@ module.exports = function(config) {
 
      autoWatch: true,
   
-     browsers: ['Firefox', 'PhantomJS'],
+     browsers: ['Firefox'],
 
       captureTimeout: 60000,
  
