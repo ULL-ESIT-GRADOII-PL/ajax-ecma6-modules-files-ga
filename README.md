@@ -1,5 +1,4 @@
 # Práctica 2: Comma separated values (CSV) with AJAX
-[![Build Status](https://travis-ci.org/marreA/ajax-ecma6-modules-files-ga.svg?branch=master)](https://travis-ci.org/marreA/ajax-ecma6-modules-files-ga)
 * La sección *Práctica: Comma Separated Values. CSV* de los [apuntes](http://crguezl.github.io/pl-html/node11.html)
 * La [descripción de la práctica](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
 * See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.
