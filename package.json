@@ -23,7 +23,7 @@
   "homepage": "https://csv-ajax-ga.herokuapp.com",
   "engines": {
     "node": "0.10.x"
-	  }
+	},
   "dependencies": {
 	"jquery": "*",
   "underscore": "*",
