@@ -11,25 +11,18 @@ var gulp = require('gulp'),
 
 //Tarea minify para meter las pruebas en la rama gh-pages
 gulp.task('minify',function(){
-			gulp.src('assets/js/*.js')
+			gulp.src('tests/*.js')
 			.pipe(uglify())
-			.pipe(gulp.dest('minified/assets/js/'))
-
-			gulp.src('test/*.js')
-			.pipe(uglify())
-			.pipe(gulp.dest('minified/test/'))
-
+			.pipe(gulp.dest('minified/'))
+			
 			gulp.src('test/*.css')
 			.pipe(minifyCSS({keepBreaks:true}))
-			.pipe(gulp.dest('minified/test/'))
+			.pipe(gulp.dest('minified/'))
 
-			gulp.src('test.html')
+			gulp.src('tests/index.html')
 			.pipe(minifyHTML())
 			.pipe(gulp.dest('minified/'))
 
-			gulp.src('assets/css/*.css')
-			.pipe(minifyCSS({keepBreaks:true}))
-			.pipe(gulp.dest('minified/assets/css/'))
 		});
 
 gulp.task('clean', function(cb){

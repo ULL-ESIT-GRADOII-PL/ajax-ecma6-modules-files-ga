@@ -4,7 +4,11 @@
   "description": "Analizador de cadenas csv usando AJAX",
   "main": "csv.js",
   "scripts": {
-    "test": "firefox tests/index.html"
+    "test": "node_modules/karma/bin/karma start --single-run",
+    "testf": "xdg-open test.html",
+    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js",
+    "karma": "node_modules/karma/bin/karma start",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
