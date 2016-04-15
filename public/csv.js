@@ -1,7 +1,7 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
 (() => {
 "use strict"; 
-const resultTemplate ='
+const resultTemplate =`
 <div class="contenido">
       <table class="center" id="result">
           <% _.each(rows, (row) => { %>
@@ -14,7 +14,7 @@ const resultTemplate ='
       </table>
   </p>
 </div>
-';
+`;
 
 /* Volcar la tabla con el resultado en el HTML */
 const fillTable = (data) => { 
