@@ -21,6 +21,9 @@
     "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   },
   "homepage": "https://csv-ajax-ga.herokuapp.com",
+  "engines": {
+    "node": "0.10.x"
+	  }
   "dependencies": {
 	"jquery": "*",
   "underscore": "*",
@@ -47,8 +50,5 @@
 	 "mocha": "*",
 	 "optimist": "*",
 	 "phantomjs-prebuilt": "^2.1.5"
-  },
-  "engines": {
-    "node": "5.10.1"
-	  }
+  }
 }
