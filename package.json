@@ -4,8 +4,6 @@
   "description": "Analizador de cadenas csv usando AJAX",
   "main": "csv.js",
   "scripts": {
-    "test": "node_modules/karma/bin/karma start --single-run",
-    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +20,7 @@
   },
   "homepage": "https://csv-ajax-ga.herokuapp.com",
   "engines": {
-    "node": "0.10.x"
+    "node": "5.10.1"
 	},
   "dependencies": {
 	"jquery": "*",
