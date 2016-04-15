@@ -1,3 +1,4 @@
+"use strict";
 
 const express = require('express');
 const app = express();
@@ -23,5 +24,5 @@ app.get('/csv', (request, response) => {
 });
 
 app.listen(app.get('port'), () => {
-    console.log(`Node app is running at localhost: ${app.get('port')}` );
+	console.log('Node app is running on port', app.get('port'));
 });
