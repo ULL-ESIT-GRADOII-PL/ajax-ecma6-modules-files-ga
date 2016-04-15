@@ -1,5 +1,5 @@
 (() => {
-//"use strict";
+"use strict";
 
 const regexp = /"((?:[^"\\]|\\.)*)"|([^,\s]+)|,\s*(?=,|$)|^\s*,/g;
 const calculate = (original) => {
