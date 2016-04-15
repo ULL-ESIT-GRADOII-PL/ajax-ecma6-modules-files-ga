@@ -7,9 +7,9 @@ module.exports = function(config) {
     
     files: [
       'public/csv.js',
-      'test/test.js',
-      'test/mocha.js',
-      'test/mocha.css',
+      'tests/test.js',
+      'tests/mocha.js',
+      'tests/mocha.css',
     ],
     
     client: {
@@ -23,7 +23,7 @@ module.exports = function(config) {
     ],
     
     preprocessors: {
-      'test/index.html': ['html2js']
+      'tests/index.html': ['html2js']
     },
     
     reporters: ['progress'],
@@ -36,7 +36,7 @@ module.exports = function(config) {
 
      autoWatch: true,
   
-     browsers: ['Firefox'],
+     browsers: ['Firefox', 'PhantomJS'],
 
       captureTimeout: 60000,
  
